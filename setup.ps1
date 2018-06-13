@@ -5,12 +5,12 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     Exit
 }
 
-mkdir -force "Documents\WindowsPowerShell"
-rm -force "Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
+mkdir -force "OneDrive\Documents\WindowsPowerShell"
+rm -force "OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
 
 git clone "https://github.com/tristal/vimfiles.git" ".dotfiles\vimfiles"
 
-cmd /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" "%USERPROFILE%\.dotfiles\Microsoft.PowerShell_profile.ps1"
+cmd /c mklink "%USERPROFILE%\OneDrive\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" "%USERPROFILE%\.dotfiles\Microsoft.PowerShell_profile.ps1"
 
 # dasm's script: https://github.com/Disassembler0/Win10-Initial-Setup-Script/
 
